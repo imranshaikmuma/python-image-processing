@@ -1,0 +1,37 @@
+Machine learning:
+machine figuring out an equation to solve a specific problem based on some example data
+its an idea that generic algorithm can tell you something about the data without having to write any custom code specific to the problem
+it builds its own logic based on the data
+it is of two types:
+supervised and unsupervised
+
+Batch gradient descent:
+it helps us in predicting closer to the real values
+it does it by using the slope of the function between input and target variables(derivate of a function) to move close to the real and acutal values
+
+
+linear regression wont work all the time as not all target variables have a linear relationship with input variables
+To handle non-linear data , we use Neural networks,Support vector machines with kernels
+
+
+Neural networks:
+In linear regression, we simply multiply each input variable to get the output variable. However, it doesnt take into consideration of the importance of each variable
+in neural networks, each node take inputs and apply weights to them, and calculate output value.
+This simple function of multiplying input variables to separate weights and generating output is called neurons.
+
+We add so many neurons to handle even complex problems
+
+This neural network is a stateless algorithm as it doesnt have a memory, meaning it doesnt save the state of the model to use to for next stage of calculation
+
+So we use Recurrent neural network(RNN) which is stateful algorithm in cases like predicting the second letter of a work given first letter
+
+Recognizing objects with neural network:
+Conventional neural network works with object detection only when the object is in the middle of an image
+To even detect image , when it is at a corner of an image, we will use either Sliding window or Convolution neural network.
+
+In CNN, it creates overlapping tiles of image, feed each tile into neural network(gives same weight to each tile so as to treat each tile equally), downsample the array(
+it means it only select tiles of importance--by selecting max value in 2/2 grid of array), and again finally passes into a fully connected neural network and finally
+classify the image
+
+source:
+https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471#.vjjpij5pf
